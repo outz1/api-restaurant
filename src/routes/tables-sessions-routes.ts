@@ -4,6 +4,8 @@ import { TablesSessionsController } from "@/controllers/table-sessions-controlle
 const tablesSessionsRoutes = Router();
 const tablesSessionsController = new TablesSessionsController();
 
-tablesSessionsRoutes.post("/", tablesSessionsController.create); // Define a rota POST para criar uma sessão de mesa (método create)
+tablesSessionsRoutes.get("/", tablesSessionsController.index); // Define a rota GET para criar uma sessão de mesa (método index)
+tablesSessionsRoutes.post("/", tablesSessionsController.create); // Define a rota POST para listar uma sessão de mesa (método create)
+tablesSessionsRoutes.patch("/:id", tablesSessionsController.update); // Define a rota PATCH para validar uma sessão de mesa (método update)
 
 export { tablesSessionsRoutes };
