@@ -1,0 +1,878 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v11.0.1"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2025-04-29T15:09:37.485Z",
+				"time": 18.35,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3333/orders/table-session/3/total",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "37"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"25-HNNTngt/OSxciTKtI0bGz631YUM\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 29 Apr 2025 15:07:11 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 37,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"total_R$\":121.4,\"total_quantity\":6}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 18.35,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Show by Table Session"
+			},
+			{
+				"startedDateTime": "2025-04-29T15:09:37.485Z",
+				"time": 2.633,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3333/orders/table-session/3",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "379"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"17b-mOeqh5obhMN4SBWC0cxQ+PNML70\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 29 Apr 2025 15:04:53 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 379,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":4,\"table_session_id\":3,\"product_id\":49,\"name\":\"Cerveja Original 600ml\",\"price\":16.9,\"quantity\":4,\"total_R$\":67.6,\"created_at\":\"2025-04-29 15:04:40\",\"updated_at\":\"2025-04-29 15:04:40\"},{\"id\":3,\"table_session_id\":3,\"product_id\":48,\"name\":\"Porção de Torresmo\",\"price\":26.9,\"quantity\":2,\"total_R$\":53.8,\"created_at\":\"2025-04-29 15:03:40\",\"updated_at\":\"2025-04-29 15:03:40\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2.633,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Index by Table Session"
+			},
+			{
+				"startedDateTime": "2025-04-29T15:09:37.485Z",
+				"time": 445.789,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3333/orders",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"table_session_id\": 3,\n\t\"product_id\": 49,\n\t\"quantity\": 4\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 29 Apr 2025 15:04:41 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "0"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json; charset=utf-8",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 445.789,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Create"
+			},
+			{
+				"startedDateTime": "2025-04-29T15:09:37.485Z",
+				"time": 3.144,
+				"request": {
+					"method": "PATCH",
+					"url": "http://localhost:3333/tables-sessions/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 400,
+					"statusText": "Bad Request",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "42"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"2a-BrhHK6yf6GrAdxYkIsX8829rGn8\""
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 28 Apr 2025 15:19:43 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 42,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"message\":\"This table is already closed\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3.144,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Close"
+			},
+			{
+				"startedDateTime": "2025-04-29T15:09:37.485Z",
+				"time": 2.4819999999999998,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3333/tables-sessions",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "237"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"ed-ZlXEZqwY4XR79GAVlQokcJ8ucj4\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 29 Apr 2025 14:57:44 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 237,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":2,\"table_id\":2,\"opened_at\":\"2025-04-28 12:53:23\",\"closed_at\":null},{\"id\":3,\"table_id\":3,\"opened_at\":\"2025-04-29 14:52:26\",\"closed_at\":null},{\"id\":1,\"table_id\":1,\"opened_at\":\"2025-04-28 12:32:33\",\"closed_at\":\"2025-04-28 15:19:01\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2.4819999999999998,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Index"
+			},
+			{
+				"startedDateTime": "2025-04-29T15:09:37.485Z",
+				"time": 596.5930000000001,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3333/tables-sessions",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"table_id\": 3\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 29 Apr 2025 14:52:27 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "0"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json; charset=utf-8",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 596.5930000000001,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Open"
+			},
+			{
+				"startedDateTime": "2025-04-29T15:09:37.485Z",
+				"time": 18.941,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3333/tables",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "481"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"1e1-85JaqwH6Yg4j0rvlpjUzdEBCK2Y\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 29 Apr 2025 14:57:23 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 481,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":1,\"table_number\":1,\"created_at\":\"2025-04-24 18:20:41\",\"updated_at\":\"2025-04-24 18:20:41\"},{\"id\":2,\"table_number\":2,\"created_at\":\"2025-04-24 18:20:41\",\"updated_at\":\"2025-04-24 18:20:41\"},{\"id\":3,\"table_number\":3,\"created_at\":\"2025-04-24 18:20:41\",\"updated_at\":\"2025-04-24 18:20:41\"},{\"id\":4,\"table_number\":4,\"created_at\":\"2025-04-24 18:20:41\",\"updated_at\":\"2025-04-24 18:20:41\"},{\"id\":5,\"table_number\":5,\"created_at\":\"2025-04-24 18:20:41\",\"updated_at\":\"2025-04-24 18:20:41\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 18.941,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Index"
+			},
+			{
+				"startedDateTime": "2025-04-29T15:09:37.485Z",
+				"time": 4.025,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:3333/products/2",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 404,
+					"statusText": "Not Found",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "31"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"1f-Zkgaox/LmBaRs1Ofkuc8bu8COvo\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 24 Apr 2025 15:31:54 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 31,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"message\":\"Product not found\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 4.025,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Remove"
+			},
+			{
+				"startedDateTime": "2025-04-29T15:09:37.485Z",
+				"time": 458.853,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:3333/products/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"name\": \"Porção de batata frita\",\n\t\"price\": 37.80\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 24 Apr 2025 15:32:43 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "0"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json; charset=utf-8",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 458.853,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Update"
+			},
+			{
+				"startedDateTime": "2025-04-29T15:09:37.485Z",
+				"time": 435.149,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3333/products",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.1"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"name\": \"Cerveja Original 600ml\",\n\t\"price\": 16.90\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 29 Apr 2025 15:04:21 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "0"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "application/json; charset=utf-8",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 435.149,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Create"
+			},
+			{
+				"startedDateTime": "2025-04-29T15:09:37.485Z",
+				"time": 3.382,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3333/products",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.0.1"
+						}
+					],
+					"queryString": [
+						{
+							"name": "name",
+							"value": "ori"
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "126"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"7e-SB1R9VySsQtwVfLnWT7C/NhhN/E\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 29 Apr 2025 15:04:32 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 126,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":49,\"name\":\"Cerveja Original 600ml\",\"price\":16.9,\"created_at\":\"2025-04-29 15:04:21\",\"updated_at\":\"2025-04-29 15:04:21\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3.382,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Index"
+			}
+		]
+	}
+}
