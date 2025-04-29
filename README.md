@@ -5,7 +5,7 @@ Foi implementado recursos como:
 - Listas de mesas disponíveis no restaurante
 - Lista e soma dos produtos enviados a cada mesa
 
-## Foi utilizado VS Code como IDE, Insomnia para realizar as HTTP Request e BeeKeeper, além de outras ferramentas em conjunto com o Node.js como express, knex, zod
+## Foi utilizado VS Code como IDE, Insomnia para realizar as HTTP Request e BeeKeeper como Banco de Dados, além de outras ferramentas em conjunto com o Node.js como express, knex, zod
 
 ![insomnia1-shot](https://github.com/user-attachments/assets/b3e37e7d-70a8-4a43-907b-9844090ceb2a)
 __________________________________________________________________________________________________
